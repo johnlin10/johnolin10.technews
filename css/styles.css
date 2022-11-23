@@ -4399,6 +4399,7 @@ textarea.form-control-lg {
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
   border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -11117,6 +11118,73 @@ blockquote {
   }
 }
 
+@media (max-width: 859px) {
+  #mainNav {
+    transition: background-color 0.15s;
+    /* Force Hardware Acceleration in WebKit */
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  #mainNav.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: 0px;
+    transition: transform 0.2s;
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #mainNav.is-fixed .navbar-brand {
+    color: #212529;
+  }
+  #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
+    color: #0085A1;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+    color: #212529;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+    color: #0085A1;
+  }
+  #mainNav.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    transform: translate3d(0, 0, 0);
+  }
+}
+@media (max-width: 240px) {
+  #mainNav {
+    transition: background-color 0.15s;
+    /* Force Hardware Acceleration in WebKit */
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  #mainNav.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: 0px;
+    transition: transform 0.2s;
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #mainNav.is-fixed .navbar-brand {
+    color: #212529;
+  }
+  #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
+    color: #0085A1;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+    color: #212529;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+    color: #0085A1;
+  }
+  #mainNav.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -11214,7 +11282,6 @@ header.masthead .site-heading .h1 {
 
 .caption {
   font-size: 0.875rem;
-  font-style: italic;
   display: block;
   margin: 0;
   padding: 0.625rem;
