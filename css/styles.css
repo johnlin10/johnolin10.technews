@@ -11208,7 +11208,6 @@ blockquote {
   left: 0;
   right: 0;
   z-index: 8000;
-  border-bottom: 1px solid #dee2e6;
   background-color: #1f1f1f;
   font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;}
 #mainNav .navbar-brand {
@@ -11234,7 +11233,6 @@ blockquote {
 }
 @media (min-width: 860px) {
   #mainNav {
-    border-bottom: 1px solid transparent;
   }
   #mainNav .navbar-brand {
     color: #fff;
@@ -11263,7 +11261,6 @@ blockquote {
     position: fixed;
     top: -57px;
     transition: transform 0.5s;
-    border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.72);
   }
   #mainNav.is-fixed .navbar-brand {
@@ -11297,7 +11294,6 @@ blockquote {
     position: fixed;
     top: -57px;
     transition: transform 0.2s;
-    border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.72);
   }
   #mainNav.is-fixed .navbar-brand {
@@ -11324,7 +11320,6 @@ blockquote {
     transition: 1s;
     /* Force Hardware Acceleration in WebKit */
     transform: translate3d(0, 0, 0);
-    border-bottom: 1px solid #cfcfcf00;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
@@ -11333,7 +11328,6 @@ blockquote {
     position: fixed;
     top: -1px;
     transition: transform 0.2s;
-    border-bottom: 1px solid #cfcfcf;
     background-color: #1f1f1f;
     box-shadow: 0 0 40px 0 #0000001f;
     transition: 0.5s;
@@ -11361,7 +11355,6 @@ blockquote {
     transition: 1s;
     /* Force Hardware Acceleration in WebKit */
     transform: translate3d(0, 0, 0);
-    border-bottom: 1px solid #cfcfcf00;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
@@ -11370,7 +11363,6 @@ blockquote {
     position: fixed;
     top: -1px;
     transition: transform 0.2s;
-    border-bottom: 4px solid #5f5f5f;
     background-color: #1f1f1f;
     box-shadow: 0 0 40px 0 #0000001f;
     transition: 0.5s;
@@ -11405,7 +11397,6 @@ blockquote {
     position: fixed;
     top: -57px;
     transition: transform 0.2s;
-    border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.72);
   }
   #mainNav.is-fixed .navbar-brand {
@@ -11697,6 +11688,7 @@ header.masthead .site-heading .h1 {
 .post-view{
   margin-left: 0;
   border-radius: 1.3rem;
+  background-color: #f5f8fa;
   width: 100%;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
@@ -12420,11 +12412,11 @@ tbody > tr[id^=TT] > td {
   bottom: 1.2rem;
   right: 1rem;
   width: 4rem;
-  height: 4rem;
-  font-size: 1.5rem;
-  padding: 0.7rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
   color: #fff;
-  border-radius: 2rem;
+  border-radius: 1rem;
   background-color: #5f5f5f;
   border: 5px solid #3f3f3f;
   box-shadow: 0 5px 0 0 #000;
@@ -12437,18 +12429,22 @@ tbody > tr[id^=TT] > td {
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 .FastGo-hide {
   display: flex;
   position: fixed;
-  bottom: 1.2rem;
-  right: -3.5rem;
-  width: 3.5rem;
-  height: 3.5rem;
-  font-size: 1.3rem;
+  bottom: 1.4rem;
+  right: -4rem;
+  width: 3.6rem;
+  height: 2.1rem;
+  font-size: 1.2rem;
   padding: 0.5rem;
   color: #fff;
-  border-radius: 1.75rem;
+  border-radius: 1rem;
   background-color: #5f5f5f;
   border: 5px solid #3f3f3f;
   box-shadow: 0 5px 0 0 #000;
@@ -12457,18 +12453,18 @@ tbody > tr[id^=TT] > td {
   text-align: center;
   z-index: 7004;
   transition: 0.4s;
-  -webkit-border-radius: 1.75rem;
-  -moz-border-radius: 1.75rem;
-  -ms-border-radius: 1.75rem;
-  -o-border-radius: 1.75rem;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 .FastGo:hover {
   width: 4.2rem;
-  height: 4.2rem;
+  height: 2.7rem;
   right: 0.9rem;
   bottom: 1.1rem;
   z-index: 3000;
@@ -12480,11 +12476,11 @@ tbody > tr[id^=TT] > td {
   bottom: 1.2rem;
   left: 1rem;
   width: 4rem;
-  height: 4rem;
-  font-size: 1.5rem;
-  padding: 0.7rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
   color: #fff;
-  border-radius: 2rem;
+  border-radius: 1rem;
   background-color: #5f5f5f;
   border: 5px solid #3f3f3f;
   box-shadow: 0 5px 0 0 #000;
@@ -12497,14 +12493,18 @@ tbody > tr[id^=TT] > td {
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 .GoHome-hide {
   display: flex;
   position: fixed;
-  bottom: 1.2rem;
-  left: -3.5rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  bottom: 1.4rem;
+  left: -4rem;
+  width: 3.6rem;
+  height: 2.1rem;
   font-size: 1.3rem;
   padding: 0.5rem;
   color: #fff;
@@ -12528,7 +12528,7 @@ tbody > tr[id^=TT] > td {
 }
 .GoHome:hover {
   width: 4.2rem;
-  height: 4.2rem;
+  height: 2.7rem;
   left: 0.9rem;
   bottom: 1.1rem;
   z-index: 3000;
@@ -12807,17 +12807,17 @@ input[type="radio"]:checked {
 #card {
   z-index: 7010;
   height: auto;
-  width: 88%;
+  width: 94%;
   max-height: 30%;
   max-width: 480px;
   bottom: -100%;
-  background-color: #fff;
-  border: 5px solid #e5e5e5;
+  background-color: #5f5f5f;
+  border: 5px solid #3f3f3f;
   border-radius: 1.8rem;
   position:fixed;
-  right: 6%;
+  right: 3%;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  box-shadow: 3px 3px 0 0 #a1a1a1;
+  box-shadow: 0 3px 0 0 #a1a1a1;
   overflow-y: auto;
   transition-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
   transition: 0.5s;
@@ -12834,8 +12834,8 @@ input[type="radio"]:checked {
   
   #card.open {
     max-height: 40%;
-    width: 88%;
-    bottom: 2rem;
+    width: 94%;
+    bottom: 1rem;
   }
 
   #card p{
@@ -12930,7 +12930,7 @@ input[type="radio"]:checked {
   justify-content:space-between;
   align-items: center;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #3a3a3a;
   border-radius: 0.9rem;
   padding: 0.5rem 0.2rem 0.5rem 0.2rem;
   margin: 0.5rem 0 0.5rem 0;
@@ -12947,12 +12947,12 @@ input[type="radio"]:checked {
 #GoTo-div:hover {
   width: 102%;
   margin-left: -1%;
-  background-color: #e8e8e8;
+  background-color: #202020;
 }
 #GoTo-div > div > span {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #5a5a5a;
+  color: #c1c1c1;
   margin-left: 0.5rem;
   white-space: nowrap;
   overflow: hidden;
@@ -12966,7 +12966,7 @@ input[type="radio"]:checked {
 
 #GoTo-div .togolink{
   font-size: 1.2rem;
-  color: #aaaaaa;
+  color: #5a5a5a;
   right: 5px;
   margin-left: 0.5rem;
   margin-right: 0.8rem;
@@ -12985,4 +12985,55 @@ input[type="radio"]:checked {
 
 .display-none {
   display: none;
+}
+
+#DynamicIsland {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  background-color: #1f1f1f;
+  z-index: 7999;
+  border-radius: 0 0 1.3rem 1.3rem;
+  -webkit-border-radius: 0 0 1.3rem 1.3rem;
+  -moz-border-radius: 0 0 1.3rem 1.3rem;
+  -ms-border-radius: 0 0 1.3rem 1.3rem;
+  -o-border-radius: 0 0 1.3rem 1.3rem;
+}
+.DynamicIsland_view {
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  margin-top: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  height: auto;
+  max-width: 480px;
+  background-color: #1f3a25;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.Dynamic_icon {
+  margin-left: 0.4rem;
+  height: 2rem;
+  width: 2rem;
+  color: #91b19f;
+}
+
+.Dynamic_content span{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  color: #7ba386;
 }
